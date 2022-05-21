@@ -7,6 +7,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import dagger.hilt.android.AndroidEntryPoint
 import ir.asn.bimitoandroidtest.BimitoTestApplication
 import ir.asn.bimitoandroidtest.R
@@ -68,7 +69,14 @@ class MainActivity : AppCompatActivity() {
     private fun setupRecyclerView() {
         binding.recyclerView.apply {
             adapter = insuranceAdapter
-            layoutManager = GridLayoutManager(this@MainActivity, 1)
+            layoutManager = GridLayoutManager(
+                this@MainActivity,
+                1,
+                RecyclerView.VERTICAL,
+                false
+            )
+            isFocusable = false
+            isNestedScrollingEnabled = false
         }
 
         insuranceAdapter.setItemClickListener { character ->
