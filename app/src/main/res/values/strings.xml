@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BimitoAndroidTest</string>
+    <string name="button">button</string>
+    <string name="insurances_compare_text">مقایسه بیمه ها</string>
+    <string name="icon">icon</string>
+    <string name="discount_code_text">کد تخفیف</string>
+    <string name="filters_text">فیلترها</string>
+    <string name="sort_text">ارزان ترین</string>
+    <string name="cover_text">پوشش 16 میلیون تومان</string>
+    <string name="image">image</string>
+    <string name="show_and_order_text">مشاهده و سفارش</string>
+    <string name="number_of_comments_text">از %d (%d نظر)</string>
+    <string name="tooman_text">تومان</string>
+    <string name="discount_value">10%</string>
+</resources>
